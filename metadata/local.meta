@@ -308,18 +308,18 @@ access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525392457.843110000
+modtime = 1525462262.133697000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28NoProfile%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525390906.291930000
+modtime = 1525729355.271536000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28EncodedCommand%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525392375.017639000
+modtime = 1525729349.969385000
