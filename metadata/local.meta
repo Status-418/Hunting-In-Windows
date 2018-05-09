@@ -280,7 +280,7 @@ access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525389429.439789000
+modtime = 1525906264.478692000
 
 [savedsearches/T1064%20-%20Execution%2FDefense%20Evasion%20-%20Office%20spawning%20scritp]
 access = read : [ * ], write : [ admin, power ]
@@ -322,21 +322,21 @@ access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736076.389446000
+modtime = 1525903995.827419000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Single-Threaded%20Apartment%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736095.101918000
+modtime = 1525906244.294402000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Non%20Interactive%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736091.175825000
+modtime = 1525906230.707518000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28WindowStyle%20Hiddent%29]
 access = read : [ * ], write : [ admin, power ]
@@ -350,56 +350,56 @@ access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736276.501379000
+modtime = 1525906182.628894000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28No%20Logo%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736264.736296000
+modtime = 1525906208.041414000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28NoExit%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736253.880175000
+modtime = 1525906214.485568000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Suspicious%20Flag%20Combination%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525736240.230667000
+modtime = 1525906251.111214000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Environment%20Variables%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525819845.301273000
+modtime = 1525906172.941734000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28File%20Download%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525823484.574725000
+modtime = 1525906194.388655000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Obfuscation%20%2B%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525821923.245651000
+modtime = 1525906237.423668000
 
 [savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Very%20Long%20Arguments%29]
 access = read : [ * ], write : [ admin, power ]
 export = none
 owner = admin
 version = 7.0.3
-modtime = 1525822075.366869000
+modtime = 1525906258.170037000
 
 [macros/ps_deobfuscate]
 access = read : [ * ], write : [ admin, power ]
