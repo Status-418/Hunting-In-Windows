@@ -372,3 +372,38 @@ export = none
 owner = admin
 version = 7.0.3
 modtime = 1525736240.230667000
+
+[savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Environment%20Variables%29]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1525819845.301273000
+
+[savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28File%20Download%29]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1525823484.574725000
+
+[savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Obfuscation%20%2B%29]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1525821923.245651000
+
+[savedsearches/T1086%20-%20Execution%20-%20PowerShell%20%28Very%20Long%20Arguments%29]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1525822075.366869000
+
+[macros/ps_deobfuscate]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1525826664.268811000
