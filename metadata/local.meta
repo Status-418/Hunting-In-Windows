@@ -407,3 +407,10 @@ export = none
 owner = admin
 version = 7.0.3
 modtime = 1525826664.268811000
+
+[savedsearches/T1047%20-%20Execution%20-%20Windows%20Management%20Instrumentation]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = admin
+version = 7.0.3
+modtime = 1526083816.447160000
