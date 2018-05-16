@@ -414,3 +414,12 @@ export = none
 owner = admin
 version = 7.0.3
 modtime = 1526083816.447160000
+
+[views/detection_overview]
+owner = admin
+version = 7.0.3
+modtime = 1526513873.674764000
+
+[nav/default]
+version = 7.0.3
+modtime = 1526513868.092894000

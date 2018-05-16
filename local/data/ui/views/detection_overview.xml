@@ -1,0 +1,199 @@
+<form>
+  <label>Detection Overview</label>
+  <fieldset submitButton="true">
+    <input type="time" token="field1">
+      <label></label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <single>
+        <title>Defense Evasion</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Defense Evasion"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Credential Access</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Credential Access"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Discovery</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Discovery"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Lateral Movement</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Lateral Movement"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Collection</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="	Collection"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Exfiltration</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="	Exfiltration"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Command and Control</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Command and Control"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <single>
+        <title>Initial Access</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Initial Access"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">preview</option>
+      </single>
+      <single>
+        <title>Execution</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Execution"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Persistence</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Persistence"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+      <single>
+        <title>Privilege Escalation</title>
+        <search>
+          <query>index="hunting_windows" 
+| makemv delim="," Category 
+| mvexpand Category 
+| search Category="Privilege Escalation"
+| stats count</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+          <sampleRatio>1</sampleRatio>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <single>
+        <title>Host Affected</title>
+        <search>
+          <query>index="hunting_windows" 
+| stats count by HostName</query>
+          <earliest>$field1.earliest$</earliest>
+          <latest>$field1.latest$</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </single>
+    </panel>
+  </row>
+</form>
