@@ -1,7 +1,7 @@
 <form>
   <label>Detection Overview</label>
   <fieldset submitButton="true">
-    <input type="time" token="field1">
+    <input type="time" token="field1" searchWhenChanged="true">
       <label></label>
       <default>
         <earliest>-24h@h</earliest>
@@ -101,6 +101,10 @@
         <option name="drilldown">none</option>
         <option name="refresh.display">progressbar</option>
       </single>
+    </panel>
+  </row>
+  <row>
+    <panel>      
       <single>
         <title>Command and Control</title>
         <search>
@@ -116,10 +120,6 @@
         <option name="drilldown">none</option>
         <option name="refresh.display">progressbar</option>
       </single>
-    </panel>
-  </row>
-  <row>
-    <panel>
       <single>
         <title>Initial Access</title>
         <search>
